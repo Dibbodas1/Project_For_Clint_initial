@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mustard Oil Product Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 ml-6">
+    <!-- Breadcrumb -->
+    <div class="container mx-auto mt-4 text-gray-500">
+      <nav class="text-sm">
+        <a href="#" class="hover:text-gray-700">Home</a> /
+        <a href="#" class="hover:text-gray-700">Ghee & Oil</a> /
+        <span class="text-gray-600">Mustard Oil</span>
+      </nav>
+    </div>
+    <!-- Main Content -->
+    <main class="container mx-auto mt-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Product Image -->
+        <div>
+          <img
+            src="https://img.freepik.com/free-photo/ghee-clarified-butter-jar-wooden-table-ai-generative_123827-24203.jpg?w=740&t=st=1728890724~exp=1728891324~hmac=436349f542a6f35e7050d1a3f7944b22ad8d6f7d6c6f64295d3346ad0ad240c2"
+            alt="Mustard Oil"
+            class="w-full rounded-lg shadow-lg"
+          />
+        </div>
+        <!-- Product Details -->
+        <div>
+          <h2 class="text-3xl font-bold text-gray-800 mb-2">
+            সরিষার তেল | Mustard Oil
+          </h2>
+
+          <p class="text-green-700 text-2xl font-semibold mb-2">
+            ৳ 310 - ৳ 1,500
+          </p>
+          <p class="text-gray-600 mb-4">
+            ঢাকার মধ্যে ৫০ টাকা <br />
+           
+          </p>
+
+          <!-- Volume Options -->
+          <div class="mb-4">
+            <label class="block text-lg font-semibold text-gray-700 mb-2"
+              >লিটার</label
+            >
+            <div class="flex space-x-4">
+              <button
+                class="size-button px-4 py-2 border rounded-lg text-gray-800 hover:bg-gray-200"
+                data-size="1L"
+              >
+                1 লিটার
+              </button>
+              <button
+                class="size-button px-4 py-2 border rounded-lg text-gray-800 hover:bg-gray-200"
+                data-size="2L"
+              >
+                2 লিটার
+              </button>
+              <button
+                class="size-button px-4 py-2 border rounded-lg text-gray-800 hover:bg-gray-200"
+                data-size="5L"
+              >
+                5 লিটার
+              </button>
+            </div>
+          </div>
+
+          <!-- Price and Quantity Selector -->
+          <p class="price text-2xl font-bold text-gray-800 mb-4">৳ 310</p>
+
+          <div class="flex items-center mb-6">
+            <button
+              class="quantity-minus bg-gray-200 text-gray-800 px-4 py-2 rounded-lg font-bold hover:bg-gray-300"
+            >
+              -
+            </button>
+            <input
+              type="number"
+              value="1"
+              class="quantity-input text-center border mx-2 w-12 h-10 rounded-lg"
+              min="1"
+            />
+            <button
+              class="quantity-plus bg-gray-200 text-gray-800 px-4 py-2 rounded-lg font-bold hover:bg-gray-300"
+            >
+              +
+            </button>
+          </div>
+
+          <!-- Add to Cart and Order Now Buttons -->
+          <div class="space-x-4">
+            <button
+              class="bg-black text-white px-6 py-3 rounded-lg font-bold hover:bg-gray-800 transition-all"
+            >
+              ADD TO CART
+            </button>
+            <button
+              class="bg-green-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-700 transition-all"
+            >
+              ORDER NOW
+            </button>
+          </div>
+
+          <!-- Categories -->
+          <div class="mt-8">
+            <p class="text-gray-600">Categories: Ghee & Oil, Popular</p>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto mt-4 text-gray-500">
+        <nav class="text-sm">
+            <a href="#" class="hover:text-gray-700">Home</a> / 
+            <a href="#" class="hover:text-gray-700">Ghee & Oil</a> / 
+            <a href="product-page.html" class="hover:text-gray-700">Mustard Oil</a> / 
+            <span class="text-gray-600">Description</span>
+        </nav>
+    </div>
+
+  <!-- Product Description Section -->
+  <section class="container mx-auto mt-8 p-6 bg-white rounded-lg shadow-lg">
+    <!-- Product Title -->
+    <h1 class="text-3xl font-bold text-gray-800 mb-4">Mustard Oil - সরিষার তেল</h1>
+    <!-- Tabs -->
+    <div class="border-b mb-4">
+        <ul class="flex space-x-8">
+            <li class="tab py-2 px-4 cursor-pointer active-tab border-b-2 border-green-600 text-green-600 font-semibold" data-tab="description">Description</li>
+        </ul>
+    </div>
+    <!-- Tab Content -->
+    <div id="description" class="tab-content active-tab-content">
+        <h2 class="text-xl font-bold text-gray-800 mb-4">Mustard Oil Benefits:</h2>
+        <p>কাঁচি ঘানি (Cold pressed) এই প্রক্রিয়ায় সরিষার দানা সরাসরি পিষে ও থেকে তেল বের করা হয়। এই তেল খুব ঘন এবং ঝাঁঝযুক্ত, যা স্বাস্থ্যের জন্য খুবই উপকারী।</p>
+
+        <ul class="list-disc ml-6 mt-4">
+            <li><strong>হজম প্রক্রিয়া:</strong> সরিষার তেল হজম প্রক্রিয়াকে সাহায্য করে।</li>
+            <li><strong>বাঁধা ব্যথা উপশম:</strong> সরিষার তেল প্রদাহ-বিরোধী উপাদান যা ব্যথা উপশম করে।</li>
+            <li><strong>ক্যান্সার রোগ প্রতিরোধ:</strong> ক্যান্সার প্রতিরোধে সরিষার তেলের গুরুত্বপূর্ণ ভূমিকা রয়েছে।</li>
+            <li><strong>চুল এবং ত্বক:</strong> সরিষার তেল ফুসফুস পরিশোধন, চুলের বৃদ্ধিতে সহায়তা করে।</li>
+            <li><strong>হৃদপিণ্ডের সুরক্ষা:</strong> এই তেল পলিইউনস্যাচুরেটেড ফ্যাটি এসিডের মাধ্যমে হৃদরোগের ঝুঁকি কমাতে সাহায্য করে।</li>
+        </ul>
+    </div>
+    <!-- Reviews Tab -->
+    <div id="reviews" class="tab-content">
+        <h2 class="text-xl font-bold text-gray-800 mb-4">Customer Reviews</h2>
+        <p class="italic text-gray-600">"This mustard oil has the perfect texture and flavor. Really enhances my cooking!"</p>
+        <p class="italic text-gray-600">"Great for both cooking and medicinal purposes. Highly recommend!"</p>
+    </div>
+</section>
+    </main>
+    <!-- JavaScript -->
+    <script>
+      const priceData = {
+        "1L": 310,
+        "2L": 600,
+        "5L": 1500,
+      };
+      // Variables for selected size and quantity
+      let selectedSize = "1L";
+      let quantity = 1;
+
+      // Elements
+      const minusButton = document.querySelector(".quantity-minus");
+      const plusButton = document.querySelector(".quantity-plus");
+      const quantityInput = document.querySelector(".quantity-input");
+      const priceElement = document.querySelector(".price");
+      const sizeButtons = document.querySelectorAll(".size-button");
+      function updatePrice() {
+        const pricePerUnit = priceData[selectedSize];
+        const totalPrice = pricePerUnit * quantity;
+        priceElement.textContent = `৳ ${totalPrice}`;
+      }
+
+      // Event listener for minus button
+      minusButton.addEventListener("click", () => {
+        if (quantity > 1) {
+          quantity--;
+          quantityInput.value = quantity;
+          updatePrice();
+        }
+      });
+
+      // Event listener for plus button
+      plusButton.addEventListener("click", () => {
+        quantity++;
+        quantityInput.value = quantity;
+        updatePrice();
+      });
+
+      // Event listener for size buttons
+      sizeButtons.forEach((button) => {
+        button.addEventListener("click", (e) => {
+          selectedSize = e.target.dataset.size;
+          sizeButtons.forEach((btn) =>
+            btn.classList.remove("bg-gray-200", "text-gray-800")
+          );
+          e.target.classList.add("bg-gray-200", "text-gray-800");
+          updatePrice();
+        });
+      });
+      quantityInput.value = quantity;
+      updatePrice();
+    </script>
+   
+  </body>
+</html>

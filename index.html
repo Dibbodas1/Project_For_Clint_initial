@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-left">
+        <img src="logo.png" alt="Logo" class="logo" />
+        <button class="lang-btn"></button>
+      </div>
+
+      <div class="header-right">
+        <div>
+          <form action="">
+            <div class="lupa">
+              <input type="search" placeholder="search"/>
+              <span class="mango_lupa"></span>
+            </div>
+          </form>
+        </div>
+        <div class="header-center">
+
+
+          <h3>Home</h3>
+          <h3>About Us</h3>
+          <h3>Contect</h3>
+        </div>
+
+        <div class="cart">
+          <span
+            class="header-cart-icon"
+            id="header-cart-icon"
+            style="cursor: pointer"
+            >🛒</span
+          >
+          <span class="cart-count">0 items</span>
+        </div>
+      </div>
+    </header>
+
+    <div id="cart-sidebar" class="sidebar-cart">
+      <div class="sidebar-cart-header">
+        <span class="sidebar-close-btn">&times;</span>
+        <h2>Your Cart</h2>
+      </div>
+      <div id="sidebar-cart-items" class="sidebar-cart-items"></div>
+      <p id="sidebar-total-price" class="sidebar-total-price">Total: ৳0</p>
+      <button class="sidebar-checkout-btn">Checkout</button>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Banner -->
+      <section class="banner">
+        <img src="./benner.png" alt="Banner" />
+        <div class="banner-overlay"></div>
+      </section>
+
+      <!-- Category Tiles -->
+      <section class="category-tiles">
+        <div class="tile">
+          <img
+            src="https://d2t8nl1y0ie1km.cloudfront.net/images/thumbs/65f7d0a7115075f231e8689c_Eggs_300.webp"
+            alt="Eggs"
+          />
+          <span>Eggs</span>
+        </div>
+        <div class="tile">
+          <img
+            src="https://d2t8nl1y0ie1km.cloudfront.net/images/thumbs/66b82e10367d9a39bc45664e_tea_300.webp"
+            alt="Tea"
+          />
+          <span>Tea</span>
+        </div>
+        <div class="tile">
+          <img
+            src="https://d2t8nl1y0ie1km.cloudfront.net/images/thumbs/6683ec60ef592be2eaea3f63_soft%20drinks%202_300.png"
+            alt="Soft Drinks"
+          />
+          <span>Soft Drinks</span>
+        </div>
+        <div class="tile">
+          <img
+            src="https://d2t8nl1y0ie1km.cloudfront.net/images/thumbs/66b1d03ad0701d63ca7e6432_Other%20frozen%20foods_300.png"
+            alt="Frozen Snacks"
+          />
+          <span>Frozen Snacks</span>
+        </div>
+        <div class="tile">
+          <img
+            src="https://d2t8nl1y0ie1km.cloudfront.net/images/thumbs/6603ccb214600a2ee5f701ef_coffee_300.webp"
+            alt="Coffee"
+          />
+          <span>Coffee</span>
+        </div>
+      </section>
+      <section class="recommended-section">
+        <h2>RECOMMENDED FOR YOU</h2>
+        <div class="product-grid">
+          <!-- Product Card 1 -->
+          <div class="product-card">
+            <img
+              class="imgg"
+              data-url="product.html"
+              src="https://d2t8nl1y0ie1km.cloudfront.net/images/thumbs/65fa94e4115075f231ec538b_Pusti-Soyabean-Oil-5L_1_415.webp "
+              alt="Pusti Soybean Oil 5L"
+            />
+            <p class="info">Available</p>
+            <h3>Pusti Soybean Oil 5L</h3>
+            <p class="price">৳818 <span>Per Piece</span></p>
+
+            <button class="add-to-bag-btn">+ Add to Bag</button>
+          </div>
+          <!-- Product Card 2 -->
+
+          <div class="product-card">
+            <img
+              class="imgg"
+              data-url="product.html"
+              src="https://d2t8nl1y0ie1km.cloudfront.net/images/thumbs/66bc93abea1edb765ffd4410_3100174_1_415.webp"
+              alt="Beef Premium Cube"
+            />
+            <p class="info">Available</p>
+            <h3>Beef Premium Cube</h3>
+            <p class="price">৳775 <span>Per Unit</span></p>
+
+            <button class="add-to-bag-btn">+ Add to Bag</button>
+          </div>
+          <!--product 3-->
+          <div class="product-card">
+            <img
+              class="imgg"
+              data-url="product.html"
+              src="https://d2t8nl1y0ie1km.cloudfront.net/images/thumbs/6605329955503b55855d83ae_Egg-Loose_1_415.webp"
+              alt="Egg Loose"
+            />
+            <p class="info">Available</p>
+            <h3>Egg Loose (Min 12pcs)</h3>
+            <p class="price">৳13</p>
+
+            <button class="add-to-bag-btn">+ Add to Bag</button>
+          </div>
+          <!-- Product Card 4 -->
+          <div class="product-card">
+            <img
+              class="imgg"
+              data-url="product.html"
+              src="https://d2t8nl1y0ie1km.cloudfront.net/images/thumbs/65fa98db115075f231ecdb21_Broiler-Chicken-Breast-Boneless_1_415.webp"
+              alt="Broiler Chicken Breast Boneless"
+            />
+            <p class="info">Available</p>
+            <h3>Broiler Chicken Breast Boneless</h3>
+            <p class="price">৳645 <span>Per Unit</span></p>
+
+            <button class="add-to-bag-btn">+ Add to Bag</button>
+          </div>
+          <!-- Product Card 5 -->
+          <div class="product-card">
+            <img
+              class="imgg"
+              data-url="product.html"
+              src="https://d2t8nl1y0ie1km.cloudfront.net/images/thumbs/65fa9704115075f231eccfc4_Quaker-Oats-500gm-Jar_1_415.webp"
+              alt="Quaker Oats 500gm (Jar)"
+            />
+            <p class="info">Available</p>
+            <h3>Quaker Oats 500gm (Jar)</h3>
+            <p class="price">৳360 <span>Per Piece</span></p>
+
+            <button class="add-to-bag-btn">+ Add to Bag</button>
+          </div>
+          <div class="product-card">
+            <img
+              class="imgg"
+              data-url="product.html"
+              src="https://d2t8nl1y0ie1km.cloudfront.net/images/thumbs/65fa94e4115075f231ec538b_Pusti-Soyabean-Oil-5L_1_415.webp "
+              alt="Pusti Soybean Oil 5L"
+            />
+            <p class="info">Available</p>
+            <h3>Pusti Soybean Oil 5L</h3>
+            <p class="price">৳818 <span>Per Piece</span></p>
+
+            <button class="add-to-bag-btn">+ Add to Bag</button>
+          </div>
+          <!-- Product Card 2 -->
+          <div class="product-card">
+            <img
+              class="imgg"
+              data-url="product.html"
+              src="https://d2t8nl1y0ie1km.cloudfront.net/images/thumbs/66bc93abea1edb765ffd4410_3100174_1_415.webp"
+              alt="Beef Premium Cube"
+            />
+            <p class="info">Available</p>
+            <h3>Beef Premium Cube</h3>
+            <p class="price">৳775 <span>Per Unit</span></p>
+
+            <button class="add-to-bag-btn">+ Add to Bag</button>
+          </div>
+
+          <!-- Product Card 3 -->
+          <div class="product-card">
+            <img
+              class="imgg"
+              data-url="product.html"
+              src="https://d2t8nl1y0ie1km.cloudfront.net/images/thumbs/6605329955503b55855d83ae_Egg-Loose_1_415.webp"
+              alt="Egg Loose"
+            />
+            <p class="info">Available</p>
+            <h3>Egg Loose (Min 12pcs)</h3>
+            <p class="price">৳13</p>
+
+            <button class="add-to-bag-btn">+ Add to Bag</button>
+          </div>
+          <!-- Product Card 4 -->
+          <div class="product-card">
+            <img
+              class="imgg"
+              data-url="product.html"
+              src="https://d2t8nl1y0ie1km.cloudfront.net/images/thumbs/65fa98db115075f231ecdb21_Broiler-Chicken-Breast-Boneless_1_415.webp"
+              alt="Broiler Chicken Breast Boneless"
+            />
+            <p class="info">Available</p>
+            <h3>Broiler Chicken Breast Boneless</h3>
+            <p class="price">৳645 <span>Per Unit</span></p>
+
+            <button class="add-to-bag-btn">+ Add to Bag</button>
+          </div>
+          <!-- Product Card 5 -->
+          <div class="product-card">
+            <img
+              class="imgg"
+              data-url="product.html"
+              src="https://d2t8nl1y0ie1km.cloudfront.net/images/thumbs/65fa9704115075f231eccfc4_Quaker-Oats-500gm-Jar_1_415.webp"
+              alt="Quaker Oats 500gm (Jar)"
+            />
+            <p class="info">Available</p>
+            <h3>Quaker Oats 500gm (Jar)</h3>
+            <p class="price">৳360 <span>Per Piece</span></p>
+
+            <button class="add-to-bag-btn">+ Add to Bag</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">Shipping & Delivery</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>About Us</h4>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Sustainability</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"
+              ><img
+                src="https://via.placeholder.com/24/3b5998?text=F"
+                alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://via.placeholder.com/24/55acee?text=T"
+                alt="Twitter"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://via.placeholder.com/24/dd4b39?text=G"
+                alt="Google"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://via.placeholder.com/24/e4405f?text=I"
+                alt="Instagram"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const priceData = {
+        "1L": 310,
+        "2L": 600,
+        "5L": 1500,
+      };
+      // Variables for selected size and quantity
+      let selectedSize = "1L";
+      let quantity = 1;
+
+      // Elements
+      const minusButton = document.querySelector(".quantity-minus");
+      const plusButton = document.querySelector(".quantity-plus");
+      const quantityInput = document.querySelector(".quantity-input");
+      const priceElement = document.querySelector(".cart-price");
+      const sizeButtons = document.querySelectorAll(".size-button");
+      function updatePrice() {
+        const pricePerUnit = priceData[selectedSize];
+        const totalPrice = pricePerUnit * quantity;
+        priceElement.textContent = `৳ ${totalPrice}`;
+      }
+
+      // Event listener for minus button
+      minusButton.addEventListener("click", () => {
+        if (quantity > 1) {
+          quantity--;
+          quantityInput.value = quantity;
+          updatePrice();
+        }
+      });
+
+      // Event listener for plus button
+      plusButton.addEventListener("click", () => {
+        quantity++;
+        quantityInput.value = quantity;
+        updatePrice();
+      });
+
+      // Event listener for size buttons
+      sizeButtons.forEach((button) => {
+        button.addEventListener("click", (e) => {
+          selectedSize = e.target.dataset.size;
+          sizeButtons.forEach((btn) =>
+            btn.classList.remove("bg-gray-200", "text-gray-800")
+          );
+          e.target.classList.add("bg-gray-200", "text-gray-800");
+          updatePrice();
+        });
+      });
+      quantityInput.value = quantity;
+      updatePrice();
+    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
